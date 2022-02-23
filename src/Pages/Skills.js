@@ -1,4 +1,4 @@
-import { CircularProgress, CircularProgressLabel, Container, Flex, Heading, Progress, Text, VStack, Stack } from '@chakra-ui/react'
+import { CircularProgress, CircularProgressLabel, Container, Flex, Heading, Text, VStack, Stack } from '@chakra-ui/react'
 import React from 'react'
 
 const Skills = () => {
