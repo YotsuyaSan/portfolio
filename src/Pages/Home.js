@@ -1,14 +1,5 @@
 import React from 'react'
-import { Heading, Box, Text, VStack, Flex, Stack, Container } from '@chakra-ui/react'
-
-const Section = ({ title, desc }) => {
-  return (
-    <Box p={5}>
-      <Heading fontSize="xl">{title}</Heading>
-      <Text mt={4}>{desc}</Text>
-    </Box>
-  )
-}
+import { Heading, Text, VStack, Flex, Stack, Container, Box } from '@chakra-ui/react'
 
 const Home = () => {
   return (
@@ -16,12 +7,20 @@ const Home = () => {
       <Flex w="100%">
         <Container maxW="container.lg" wrap="wrap">
           <Stack>
-            <Heading as="h3" variant="section-title" fontSize="2xl">Diplômes et formations</Heading>
-            <Text fontSize="lg">Lycée dampierre Valenciennes</Text>
-            <Text>BTS Services Informatiques aux Organisations</Text>
-
-            <Text>Lycée professionnel St Luc Cambrai</Text>
-            <Text>Bac professionnel Systèmes Numériques option Réseaux Informatiques et Systèmes Communiquants</Text>
+            <Heading as="h3" variant="section-title">À propos de moi</Heading>
+            <Box p={4} borderWidth={2}>
+              <Text></Text>
+            </Box>
+            <Heading as="h3" variant="section-title">Parcours scolaire</Heading>
+            <br/>
+            <Box p={4} borderWidth={2}>
+              <Text>Lycée professionnel St Luc Cambrai</Text>
+              <Text>Bac professionnel Systèmes Numériques option Réseaux Informatiques et Systèmes Communiquants</Text>
+            </Box>
+            <Box p={4} borderWidth={2}>
+              <Text>Lycée Dampierre Valenciennes</Text>
+              <Text>BTS Services Informatiques aux Organisations option Solutions Logicielles et Applications Métiers</Text>
+            </Box>
           </Stack>
         </Container>
       </Flex>
