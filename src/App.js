@@ -15,7 +15,6 @@ function App() {
       <ColorModeScript initialColorMode='dark' />
       <Navbar />
       <BrowserRouter>
-
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/competences" element={<Skills />} />
