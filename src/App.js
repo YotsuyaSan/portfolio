@@ -12,10 +12,10 @@ import theme from './theme';
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      <ColorModeScript initialColorMode='light'/>
+      <ColorModeScript initialColorMode='dark' />
       <Navbar />
       <BrowserRouter>
-      
+
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/competences" element={<Skills />} />

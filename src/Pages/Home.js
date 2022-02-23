@@ -7,12 +7,12 @@ const Home = () => {
       <Flex w="100%">
         <Container maxW="container.lg" wrap="wrap">
           <Stack>
-            <Heading as="h3" variant="section-title">À propos de moi</Heading>
+            <Heading variant="section-title">À propos de moi</Heading>
             <Box p={4} borderWidth={2}>
               <Text></Text>
             </Box>
-            <Heading as="h3" variant="section-title">Parcours scolaire</Heading>
-            <br/>
+            <Heading variant="section-title">Parcours scolaire</Heading>
+            <br />
             <Box p={4} borderWidth={2}>
               <Text>Lycée professionnel St Luc Cambrai</Text>
               <Text>Bac professionnel Systèmes Numériques option Réseaux Informatiques et Systèmes Communiquants</Text>
