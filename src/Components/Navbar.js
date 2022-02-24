@@ -26,7 +26,6 @@ const Navbar = () => {
             mt={{ base: 4, nmd: 0 }}
           >
             <Link href='/'>Accueil</Link>
-            <Link href='/competences'>Compétences</Link>
             <Link href='/stages'>Stages</Link>
             <Link href='/veille'>Veille technologique</Link>
             <Link href='/contact'>Contact</Link>

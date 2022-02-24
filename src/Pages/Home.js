@@ -1,26 +1,24 @@
 import React from 'react'
-import { Heading, Text, VStack, Flex, Stack, Container, Box } from '@chakra-ui/react'
+import { Heading, Text, VStack, Flex, Stack, Container, Box, useColorModeValue } from '@chakra-ui/react'
+import Skills from '../Components/Skills'
+import Schools from '../Components/Schools'
 
 const Home = () => {
   return (
     <VStack p={5}>
       <Flex w="100%">
-        <Container maxW="container.lg" wrap="wrap">
+        <Container>
           <Stack>
-            <Heading variant="section-title">À propos de moi</Heading>
-            <Box p={4} borderWidth={2}>
-              <Text>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec volutpat arcu at maximus consectetur. Proin tincidunt elementum diam eu volutpat. Nam malesuada, justo in gravida laoreet, purus ipsum auctor ipsum, sit amet mattis velit libero a purus. Sed ultrices urna nulla, in porttitor neque aliquam quis. Etiam ullamcorper faucibus lectus, et condimentum nunc gravida non. Pellentesque facilisis dui turpis, non tincidunt augue vehicula et. Nulla luctus auctor metus, ut pellentesque urna. Pellentesque a lectus vitae nisi lobortis varius sit amet id purus. Etiam ante neque, aliquam ornare semper a, semper efficitur quam. In tempor ac nisl et fermentum. In semper, ante at fermentum faucibus, turpis velit commodo eros, eget vehicula lorem felis quis nibh. Cras leo ligula, volutpat nec imperdiet id, laoreet id diam. </Text>
-            </Box>
-            <Heading variant="section-title">Parcours scolaire</Heading>
-            <br />
-            <Box p={4} borderWidth={2}>
-              <Text>Lycée professionnel St Luc Cambrai</Text>
-              <Text>Bac professionnel Systèmes Numériques option Réseaux Informatiques et Systèmes Communiquants</Text>
-            </Box>
-            <Box p={4} borderWidth={2}>
-              <Text>Lycée Dampierre Valenciennes</Text>
-              <Text>BTS Services Informatiques aux Organisations option Solutions Logicielles et Applications Métiers</Text>
-            </Box>
+            <Container centerContent>
+              <Heading variant="section-title">À propos de moi</Heading>
+              <Box p={6} w='600px' h='auto' borderRadius={5} bgColor={useColorModeValue('gray.100', 'gray.700')}>
+                <Text>Je suis un Étudiant en troisième année de Licence Informatique spécialisation Développement / DevOps. En parallèle de mes études, je suis aussi Développeur Web Freelance depuis 2022. Mes missions principales sont la réalisation de site vitrine pour particulier ou entreprise ainsi que de site E-commerce.</Text>
+              </Box>
+            </Container>
+
+            <Skills />
+
+            <Schools />
           </Stack>
         </Container>
       </Flex>
