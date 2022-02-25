@@ -1,16 +1,16 @@
-import { ChakraProvider, ColorModeScript } from '@chakra-ui/react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Navbar from './Components/Navbar';
-import Contact from './Pages/Contact';
-import Home from './Pages/Home';
-import Stages from './Pages/Stages';
-import Veille from './Pages/Veille';
-import theme from './theme';
+import { ChakraProvider, ColorModeScript } from "@chakra-ui/react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Navbar from "./Components/Navbar";
+import Contact from "./Pages/Contact";
+import Home from "./Pages/Home";
+import Stages from "./Pages/Stages";
+import Veille from "./Pages/Veille";
+import theme from "./theme";
 
 function App() {
   return (
     <ChakraProvider theme={theme}>
-      <ColorModeScript initialColorMode='dark' />
+      <ColorModeScript initialColorMode="dark" />
       <Navbar />
       <BrowserRouter>
         <Routes>
@@ -21,7 +21,7 @@ function App() {
         </Routes>
       </BrowserRouter>
     </ChakraProvider>
-  )
+  );
 }
 
 export default App;

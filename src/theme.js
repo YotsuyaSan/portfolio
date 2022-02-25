@@ -4,6 +4,10 @@ const fonts = {
     fonts: ""
 }
 
+const colors = {
+    
+}
+
 const components = {
     Heading: {
         variants: {
