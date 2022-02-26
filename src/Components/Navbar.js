@@ -6,6 +6,7 @@ import {
   Link,
   Spacer,
   Stack,
+  Text,
   useColorMode,
   VStack,
 } from "@chakra-ui/react";
@@ -20,9 +21,9 @@ const Navbar = () => {
   return (
     <VStack p={5}>
       <Flex w="100%">
-        <Heading ml="8" size="md" fontWeight="semibold">
+        <Text ml="8" fontSize='xl' fontWeight="semibold">
           Portfolio
-        </Heading>
+        </Text>
 
         <Spacer />
 
@@ -31,6 +32,8 @@ const Navbar = () => {
           display={{ base: "none", md: "flex" }}
           width={{ base: "full", md: "auto" }}
           mr={8}
+          size="md"
+          spacing={5}
         >
           <Link href="/">Accueil</Link>
           <Link href="/stages">Stages</Link>

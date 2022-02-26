@@ -8,7 +8,11 @@ import Stage from "../Components/Stage";
 const Stages = () => {
   return (
     <VStack p={5}>
-      <Container centerContent><Heading variant='section-title'>Entreprises m'ayant accueilli en stage</Heading></Container>
+      <Container centerContent>
+        <Heading variant="section-title">
+          Entreprises m'ayant accueilli en stage
+        </Heading>
+      </Container>
       <Wrap justify="center">
         <WrapItem>
           <Stage
