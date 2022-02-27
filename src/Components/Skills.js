@@ -22,7 +22,7 @@ const Skill = ({ skillName, skillIcon }) => {
       p={6}
       minW="140px"
       borderRadius={5}
-      bgColor={useColorModeValue("gray.100", "gray.700")}
+      bgColor={useColorModeValue("#E8E2DC", "#404040")}
     >
       <Text textAlign="center" fontSize="xl">
         <Center>{skillIcon}</Center>

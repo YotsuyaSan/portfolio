@@ -8,22 +8,30 @@ import {
   Wrap,
   useMediaQuery,
   WrapItem,
+  useColorMode,
 } from "@chakra-ui/react";
+
 import React from "react";
 
 const School = ({ name, formation, dates }) => {
+  const { colorMode, toggleColorMode } = useColorMode();
+  const isDark = colorMode == "dark";
   const [isMobile] = useMediaQuery("(max-width: 768px)");
 
   return (
     <Box
       margin="auto"
       p={6}
-      minW={isMobile ? "350px" : "600px"}
+      minW={isMobile ? "350px" : "768px"}
       h="150px"
       borderRadius={5}
-      bgColor={useColorModeValue("gray.100", "gray.700")}
+      bgColor={useColorModeValue("#E8E2DC", "#404040")}
     >
-      <Badge borderRadius="full" px="2" colorScheme="teal">
+      <Badge
+        borderRadius="full"
+        px="2"
+        colorScheme={isDark ? "teal" : "orange"}
+      >
         {dates}
       </Badge>
 

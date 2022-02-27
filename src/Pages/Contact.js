@@ -22,7 +22,7 @@ const Contact = () => {
             p={5}
             minW="130px"
             borderRadius={5}
-            bgColor={useColorModeValue("gray.100", "gray.700")}
+            bgColor={useColorModeValue("#FFFFFF", "#404040")}
           >
             <Stack direction="column">
               <Link href="https://github.com/YotsuyaSan">

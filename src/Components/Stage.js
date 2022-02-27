@@ -22,7 +22,7 @@ const Stage = ({ logo, description, url }) => {
         maxW={"350px"}
         minH="300px"
         borderRadius={5}
-        bgColor={useColorModeValue("orange.100", "gray.700")}
+        bgColor={useColorModeValue("#FFFFFF", "#404040")}
       >
         <Center>
           <Image maxH="100px" src={logo} />

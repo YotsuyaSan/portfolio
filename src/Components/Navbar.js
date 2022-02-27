@@ -21,7 +21,7 @@ const Navbar = () => {
   return (
     <VStack p={5}>
       <Flex w="100%">
-        <Text ml="8" fontSize='xl' fontWeight="semibold">
+        <Text ml={8} fontSize="xl" fontWeight="semibold">
           Portfolio
         </Text>
 
@@ -31,7 +31,8 @@ const Navbar = () => {
           direction={{ base: "column", md: "row" }}
           display={{ base: "none", md: "flex" }}
           width={{ base: "full", md: "auto" }}
-          mr={8}
+          mr={5}
+          align="center"
           size="md"
           spacing={5}
         >
