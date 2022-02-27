@@ -38,8 +38,8 @@ const Home = () => {
                 <Text>
                   Bonjour, je m'appelle Zaccaria Maldrie. Passionné par le
                   domaine de l'informatique je suis actuellement en deuxième
-                  année de BTS SIO option SLAM pour faire de cette passion un
-                  métier. Je développe actuellement mes compétences web en
+                  année de BTS SIO option SLAM pour faire de cette passion une
+                  profession. Je développe actuellement mes compétences web en
                   suivant des cours sur le développement FullStack MERN
                   (MongoDB, Express.Js, React.Js, Node.Js)
                 </Text>

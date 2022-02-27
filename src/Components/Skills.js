@@ -34,37 +34,39 @@ const Skill = ({ skillName, skillIcon }) => {
 
 const Skills = () => {
   return (
-    <VStack p={5}>
-      <Container centerContent>
-        <Heading variant="section-title">Mes compétences</Heading>
-      </Container>
-      <Wrap justify="center">
-        <WrapItem>
-          <Skill skillName="React.js" skillIcon={<FaReact />} />
-        </WrapItem>
-        <WrapItem>
-          <Skill skillName="JavaScript" skillIcon={<SiJavascript />} />
-        </WrapItem>
-        <WrapItem>
-          <Skill skillName="Express.js" skillIcon={<SiExpress />} />
-        </WrapItem>
-        <WrapItem>
-          <Skill skillName="HTML 5" skillIcon={<FaHtml5 />} />
-        </WrapItem>
-        <WrapItem>
-          <Skill skillName="CSS 3" skillIcon={<FaCss3Alt />} />
-        </WrapItem>
-        <WrapItem>
-          <Skill skillName="Java" skillIcon={<FaJava />} />
-        </WrapItem>
-        <WrapItem>
-          <Skill skillName="MySQL" skillIcon={<GrMysql />} />
-        </WrapItem>
-        <WrapItem>
-          <Skill skillName="MongoDB" skillIcon={<SiMongodb />} />
-        </WrapItem>
-      </Wrap>
-    </VStack>
+    <Center>
+      <VStack maxW="768px">
+        <Container centerContent>
+          <Heading variant="section-title">Mes compétences</Heading>
+        </Container>
+        <Wrap justify="center">
+          <WrapItem>
+            <Skill skillName="React.js" skillIcon={<FaReact />} />
+          </WrapItem>
+          <WrapItem>
+            <Skill skillName="JavaScript" skillIcon={<SiJavascript />} />
+          </WrapItem>
+          <WrapItem>
+            <Skill skillName="Express.js" skillIcon={<SiExpress />} />
+          </WrapItem>
+          <WrapItem>
+            <Skill skillName="HTML 5" skillIcon={<FaHtml5 />} />
+          </WrapItem>
+          <WrapItem>
+            <Skill skillName="CSS 3" skillIcon={<FaCss3Alt />} />
+          </WrapItem>
+          <WrapItem>
+            <Skill skillName="Java" skillIcon={<FaJava />} />
+          </WrapItem>
+          <WrapItem>
+            <Skill skillName="MySQL" skillIcon={<GrMysql />} />
+          </WrapItem>
+          <WrapItem>
+            <Skill skillName="MongoDB" skillIcon={<SiMongodb />} />
+          </WrapItem>
+        </Wrap>
+      </VStack>
+    </Center>
   );
 };
 
