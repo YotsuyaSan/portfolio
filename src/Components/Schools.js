@@ -5,8 +5,9 @@ import {
   useColorModeValue,
   VStack,
   Container,
-  Stack,
+  Wrap,
   useMediaQuery,
+  WrapItem,
 } from "@chakra-ui/react";
 import React from "react";
 
@@ -49,20 +50,24 @@ const Schools = () => {
     <VStack p={5}>
       <Container centerContent>
         <Heading variant="section-title">Parcours scolaire</Heading>
-        <Stack justifyContent="space-between" direction={["column", "row"]}>
+      </Container>
+
+      <Wrap justify="center">
+        <WrapItem>
           <School
             name="Lycée professionnel St Luc Cambrai"
             formation="Bac professionnel Systèmes Numériques option Réseaux Informatiques et Systèmes Communiquants"
             dates="2017 - 2020"
           />
-
+        </WrapItem>
+        <WrapItem>
           <School
             name="Lycée Dampierre Valenciennes"
             formation="BTS Services Informatiques aux Organisations option Solutions Logicielles et Applications Métiers"
             dates="2020 - Aujourd'hui"
           />
-        </Stack>
-      </Container>
+        </WrapItem>
+      </Wrap>
     </VStack>
   );
 };
