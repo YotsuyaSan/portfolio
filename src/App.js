@@ -1,6 +1,7 @@
 import { ChakraProvider, ColorModeScript } from "@chakra-ui/react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Navbar from "./Components/Navbar";
+import Competences from "./Pages/Competences";
 import Contact from "./Pages/Contact";
 import Home from "./Pages/Home";
 import Stages from "./Pages/Stages";
@@ -15,6 +16,7 @@ function App() {
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/portefeuille" element={<Competences />} />
           <Route path="/stages" element={<Stages />} />
           <Route path="/veille" element={<Veille />} />
           <Route path="/contact" element={<Contact />} />

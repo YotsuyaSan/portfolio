@@ -6,8 +6,11 @@ import {
   useMediaQuery,
   useColorModeValue,
   useColorMode,
+  Badge,
   Wrap,
   WrapItem,
+  LinkBox,
+  LinkOverlay,
 } from "@chakra-ui/react";
 import React from "react";
 
@@ -17,14 +20,76 @@ const Block = ({ text }) => {
   return (
     <Box
       p={6}
-      /*       minW={isMobile ? "350px" : "600px"}
-      maxW="768px"
-      minH="100px"
+      margin="auto"
+      minW={isMobile ? "350px" : "768px"}
       borderRadius={5}
-      bgColor={useColorModeValue("#E8E2DC", "#404040")} */
+      bgColor={useColorModeValue("#E8E2DC", "#404040")}
     >
       {text}
     </Box>
+  );
+};
+
+const Article = ({ date, title, link }) => {
+  const [isMobile] = useMediaQuery("(max-width: 768px)");
+  const { colorMode } = useColorMode();
+  // eslint-disable-next-line eqeqeq
+  const isDark = colorMode == "dark";
+
+  return (
+    <LinkBox>
+      <LinkOverlay href={link} />
+      <Box
+        margin="auto"
+        p={6}
+        minW={isMobile ? "350px" : "768px"}
+        borderRadius={5}
+        bgColor={useColorModeValue("#E8E2DC", "#404040")}
+      >
+        <Badge
+          borderRadius="full"
+          px="2"
+          colorScheme={isDark ? "teal" : "orange"}
+        >
+          {date}
+        </Badge>
+        <Box mt="1" fontWeight="semibold" as="h4" lineHeight="tight">
+          {title}
+        </Box>
+      </Box>
+    </LinkBox>
+  );
+};
+
+const Tool = ({ title, desc, link }) => {
+  const [isMobile] = useMediaQuery("(max-width: 768px)");
+  const { colorMode } = useColorMode();
+
+  return (
+    <LinkBox>
+      <LinkOverlay href={link} />
+      <Box
+        margin="auto"
+        p={6}
+        minW={isMobile ? "350px" : "768px"}
+        borderRadius={5}
+        bgColor={useColorModeValue("#E8E2DC", "#404040")}
+      >
+        <Box mt="1" fontWeight="semibold" as="h4" lineHeight="tight">
+          {title}
+        </Box>
+        <Box
+          color="gray.500"
+          fontWeight="semibold"
+          letterSpacing="wide"
+          fontSize="xs"
+          textTransform="uppercase"
+          ml="2"
+        >
+          {desc}
+        </Box>
+      </Box>
+    </LinkBox>
   );
 };
 
@@ -35,39 +100,57 @@ const Veille = () => {
         <Heading align="center" variant="section-title">
           Veille technologique
         </Heading>
-        <Wrap justify="center">
+        <Wrap spacing={5} justify="center">
           <WrapItem>
             <Block
               text={
-                "Ma veille technologique portera sur le développement Web FullStack MERN (MongoDB, Express.Js, React.Js, Node.Js). Ce portfolio a été réalisé avec React.Js, les 4 paragraphes ci dessous présentent brièvement les differentes technologies MERN."
+                "Ma veille technologique portera sur le développement par intelligence artificielle. Les outils sur lesquels je vais me focaliser sont GitHub Copilot, Tabnine, et OpenAI Codex (utilisé pour alimenter GitHub Copilot."
               }
             />
           </WrapItem>
+
           <WrapItem>
-            <Block
-              text={
-                "Mongoose est une bibliothèque de programmation JavaScript orientée objet qui crée une connexion entre MongoDB et le framework d'application Web Express."
-              }
+            <Heading align="center" variant="section-title">
+              Technologies
+            </Heading>
+          </WrapItem>
+
+          <WrapItem>
+            <Tool
+              title="GitHub Copilot"
+              desc="Avec GitHub Copilot, obtenez des suggestions pour des lignes entières ou des fonctions entières directement dans votre éditeur."
+              link="https://copilot.github.com/"
             />
           </WrapItem>
+
           <WrapItem>
-            <Block
-              text={
-                "Express.js est un framework pour construire des applications web basées sur Node.js. C'est de fait le framework standard pour le développement de serveur en Node.js."
-              }
+            <Tool
+              title="OpenAI"
+              desc="La mission d'OpenAI est de faire en sorte que l'intelligence artificielle profite à toute l'humanité. Une partie importante de cet effort consiste à entraîner les systèmes d'IA à faire ce que les humains veulent."
+              link="https://openai.com/"
             />
           </WrapItem>
+
           <WrapItem>
-            <Block
-              text={
-                "React est une bibliothèque JavaScript libre développée par Facebook depuis 2013. Le but principal de cette bibliothèque est de faciliter la création d'application web monopage, via la création de composants dépendant d'un état et générant une page HTML à chaque changement d'état."
-              }
+            <Tool
+              title="Tabnine"
+              desc="L'assistant IA de Tabnine anticipe vos besoins de codage, fournissant des complétions de code pour vous et votre équipe de développement qui augmentent votre productivité."
+              link="https://www.tabnine.com/"
             />
           </WrapItem>
+
           <WrapItem>
-            <Block
-              text={
-                "Node.js est une plateforme logicielle libre en JavaScript, orientée vers les applications réseau évènementielles hautement concurrentes qui doivent pouvoir monter en charge. Elle utilise la machine virtuelle V8, la librairie libuv pour sa boucle d'évènements, et implémente sous licence MIT les spécifications CommonJS."
+            <Heading align="center" variant="section-title">
+              Articles
+            </Heading>
+          </WrapItem>
+
+          <WrapItem>
+            <Article
+              date="28 septembre 2021"
+              title="AI Can Write Code Like Humans—Bugs and All"
+              link={
+                "https://www.wired.com/story/ai-write-code-like-humans-bugs/"
               }
             />
           </WrapItem>
