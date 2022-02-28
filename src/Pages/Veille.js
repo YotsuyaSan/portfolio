@@ -147,11 +147,27 @@ const Veille = () => {
 
           <WrapItem>
             <Article
+              date="6 août 2021"
+              title="GitHub Copilot : ce que reprochent les développeurs à l’assistant de programmation"
+              link="https://www.blogdumoderateur.com/github-copilot-reproches-developpeurs/"
+            />
+          </WrapItem>
+
+          <WrapItem>
+            <Article
               date="28 septembre 2021"
               title="AI Can Write Code Like Humans—Bugs and All"
               link={
                 "https://www.wired.com/story/ai-write-code-like-humans-bugs/"
               }
+            />
+          </WrapItem>
+
+          <WrapItem>
+            <Article
+              date="14 novembre 2021"
+              title="Premières impressions sur la préversion de GitHub Copilot"
+              link="https://www.lemondeinformatique.fr/actualites/lire-premieres-impressions-sur-la-preversion-de-github-copilot-84756.html"
             />
           </WrapItem>
         </Wrap>
