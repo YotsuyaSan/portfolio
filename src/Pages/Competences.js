@@ -9,7 +9,7 @@ import React from "react";
 import { Document, Page } from "react-pdf";
 import portefeuille from "../assets/portefeuille.pdf";
 
-const Competences = (props) => {
+const Competences = () => {
   const [isMobile] = useMediaQuery("(max-width: 768px)");
 
   return (
