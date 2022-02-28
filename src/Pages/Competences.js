@@ -26,7 +26,7 @@ const Competences = (props) => {
             file={portefeuille}
             options={{ workerSrc: "/pdf.worker.js" }}
           >
-            <Page pageNumber={1} />
+            <Page scale={1.5} pageNumber={1} />
           </Document>
         </Center>
       </Box>
