@@ -1,7 +1,5 @@
 import {
-  Container,
   Flex,
-  Heading,
   IconButton,
   Link,
   Spacer,

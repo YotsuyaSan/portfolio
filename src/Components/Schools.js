@@ -14,7 +14,7 @@ import {
 import React from "react";
 
 const School = ({ name, formation, dates }) => {
-  const { colorMode, toggleColorMode } = useColorMode();
+  const { colorMode } = useColorMode();
   // eslint-disable-next-line eqeqeq
   const isDark = colorMode == "dark";
   const [isMobile] = useMediaQuery("(max-width: 768px)");

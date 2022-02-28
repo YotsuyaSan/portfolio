@@ -6,7 +6,6 @@ import {
   Center,
   LinkBox,
   LinkOverlay,
-  Spacer,
 } from "@chakra-ui/react";
 import React from "react";
 
