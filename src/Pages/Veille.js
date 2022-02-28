@@ -43,6 +43,7 @@ const Article = ({ date, title, link }) => {
         margin="auto"
         p={6}
         minW={isMobile ? "350px" : "768px"}
+        maxW="768px"
         borderRadius={5}
         bgColor={useColorModeValue("#E8E2DC", "#404040")}
       >

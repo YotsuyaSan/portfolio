@@ -38,7 +38,7 @@ const Contact = () => {
               <WrapItem>
                 <Link href="https://github.com/YotsuyaSan">
                   <Button
-                    minW={isMobile ? "350px" : "600px"}
+                    minW={isMobile ? "300px" : "600px"}
                     leftIcon={<AiFillGithub />}
                     bgColor={useColorModeValue("#F7F4F0")}
                   >
@@ -49,7 +49,7 @@ const Contact = () => {
               <WrapItem>
                 <Link href="https://www.linkedin.com/in/zaccaria-maldrie-6623811b9/">
                   <Button
-                    minW={isMobile ? "350px" : "600px"}
+                    minW={isMobile ? "300px" : "600px"}
                     leftIcon={<AiFillLinkedin />}
                     bgColor={useColorModeValue("#F7F4F0")}
                   >
@@ -59,7 +59,7 @@ const Contact = () => {
               </WrapItem>
               <WrapItem>
                 <Button
-                  minW={isMobile ? "350px" : "600px"}
+                  minW={isMobile ? "300px" : "600px"}
                   leftIcon={<GrMail />}
                   bgColor={useColorModeValue("#F7F4F0")}
                   onClick={() =>
@@ -73,7 +73,7 @@ const Contact = () => {
               </WrapItem>
               <WrapItem>
                 <Button
-                  minW={isMobile ? "350px" : "600px"}
+                  minW={isMobile ? "300px" : "600px"}
                   leftIcon={<AiFillPhone />}
                   bgColor={useColorModeValue("#F7F4F0")}
                   onClick={() =>
